@@ -1,0 +1,32 @@
+.faq-section {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.faq-section > div > details {
+    margin-left: 20px;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: justify;
+  }
+  
+  .faq-container h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .faq-container p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  

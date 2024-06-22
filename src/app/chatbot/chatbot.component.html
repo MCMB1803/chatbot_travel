@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700,300">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.2/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400&family=Finger+Paint&display=swap">
+    <title>Chatter box!</title>
+</head>
+<body>
+  <div class="hero-container">
+    <div class="hero-text">
+      <h1>Welcome to Discover Destinations</h1>
+      <p>Your gateway to unforgettable adventures and seamless travel experiences.</p>
+      <div class="search-container">
+        <input type="text" placeholder="Search..." class="search-input">
+        <button class="search-button">Search</button>
+      </div>
+    </div>
+    <img src="assets/trave.jpg" alt="Hero Image" class="hero-image">
+  </div>
+
+  <div class="popular-destinations-container">
+    <h2>Popular Destinations</h2>
+    <div class="popular-destinations">
+      <div class="destination-card">
+        <img src="assets/cancun.webp" alt="Beaches of Cancún, Mexico">
+        <h3>Beaches of Cancún, Mexico</h3>
+      </div>
+      <div class="destination-card">
+        <img src="assets/alpes.jpeg" alt="Mountains of the Swiss Alps">
+        <h3>Mountains of the Swiss Alps</h3>
+      </div>
+      <div class="destination-card">
+        <img src="assets/italy.jpeg" alt="Historical Cities of Italy">
+        <h3>Historical Cities of Italy</h3>
+      </div>
+      <div class="destination-card">
+        <img src="assets/safari.webp" alt="Safari in South Africa">
+        <h3>Safari in South Africa</h3>
+      </div>
+      <div class="destination-card">
+        <img src="assets/greek.webp" alt="Greek Islands">
+        <h3>Greek Islands</h3>
+      </div>
+    </div>
+  </div>
+
+    <div>
+        <df-messenger
+            chat-icon="/assets/chatbot.png"
+            intent="WELCOME"
+            chat-title="TripMate"
+            agent-id="0e9485cd-8bda-4975-8d71-fb74d1fc5d46"
+            language-code="en">
+        </df-messenger>
+    </div>
+</body>
+</html>
+
