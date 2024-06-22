@@ -6,9 +6,38 @@ df-messenger {
   --df-messenger-chat-background-color: #fafafa;
   --df-messenger-font-color: #000;
   --df-messenger-send-icon: #00adff;
-  --df-messenger-user-message: #0041C2;
+  --df-messenger-user-message: #5686e7;
   --df-messenger-chip-border-color:#0041C2;
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  width: 350px;
+  max-width: 100%;
+  height: 80vh; /* Ajusta la altura del chatbot */
+  max-height: 80vh;
+  z-index: 9999;
+  border-radius: 10px 10px 0 0; /* Bordes redondeados en la parte superior */
 }
+
+@media (max-width: 768px) {
+  df-messenger {
+    right: 10px;
+    width: 300px; /* Ajusta el ancho para tablets */
+    height: 70vh; /* Ajusta la altura para tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  df-messenger {
+    right: 5px;
+    bottom: 0;
+    width: 100%; /* Ocupa todo el ancho para smartphones */
+    height: 60vh; /* Ajusta la altura para smartphones */
+    border-radius: 10px 10px 0 0;
+  }
+}
+
+
 .hero-container {
   position: relative;
   text-align: center;
@@ -104,3 +133,54 @@ df-messenger {
   margin-top: 10px;
 }
 
+/* Media Queries for Tablets */
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 2.5em;
+  }
+  
+  .hero-text p {
+    font-size: 1em;
+  }
+
+  .search-input {
+    width: 250px;
+    max-width: calc(100% - 60px);
+  }
+
+  .search-button {
+    padding: 10px 15px;
+  }
+
+  .popular-destinations {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+/* Media Queries for Smartphones */
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 2em;
+  }
+
+  .hero-text p {
+    font-size: 0.9em;
+  }
+
+  .search-input {
+    width: 200px;
+    max-width: calc(100% - 40px);
+  }
+
+  .search-button {
+    padding: 10px 10px;
+  }
+
+  .popular-destinations {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .destination-card h3 {
+    font-size: 1em;
+  }
+}
