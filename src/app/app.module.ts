@@ -9,6 +9,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AboutComponent } from './about/about.component';
 import { FaqComponent } from './faq/faq.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
     ChatbotComponent,
     NavbarComponent,
     AboutComponent,
-    FaqComponent
+    FaqComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
